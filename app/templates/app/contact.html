@@ -1,0 +1,26 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="contact">
+    <h1 class="text-5xl">Contact Me Here</h1><br>
+    <dl class="max-w-md text-gray-900 divide-y ">
+        <div class="flex flex-col pb-3">
+            <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Email address</dt>
+            <dd class="text-lg font-semibold"><a href="mailto:melchorsibalonjr24@gmail.com">melchorsibalonjr24@gmail.com</a></dd>
+        </div>
+        <div class="flex flex-col py-3">
+            <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Facebook Account</dt>
+            <dd class="text-lg font-semibold"><a href="https://www.facebook.com/MelSibalon">Mel Sibalon</a></dd>
+        </div>
+        <div class="flex flex-col pt-3">
+            <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Phone number</dt>
+            <dd class="text-lg font-semibold">+639050720327</dd>
+        </div>
+        <div class="flex flex-col pt-3">
+            <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Instagram Account</dt>
+            <dd class="text-lg font-semibold"><a href="https://www.instagram.com/MelSibalon">Mel Sibalon</a></dd>
+        </div>
+    </dl>
+</div>
+{% endblock content %}

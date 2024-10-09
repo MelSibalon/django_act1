@@ -1,0 +1,186 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/about.css' %}">
+{% endblock css %}
+
+{% block content %}
+<div class="about md:flex bg-gray-700">
+    <ul class="flex-column space-y space-y-4 text-sm font-medium text-white justify-center dark:text-black-400 md:me-4 mb-4 md:mb-0">
+        <li>
+            <a href="#" id="profile-tab" class="tab-link inline-flex items-center px-4 py-3 rounded-lg w-full bg-gray-500 hover:bg-gray-600 hover:shadow-lg">
+                Profile
+            </a>
+        </li>
+        <li>
+            <a href="#" id="logo-tab" class="tab-link inline-flex items-center px-4 py-3 rounded-lg w-full bg-gray-500 hover:bg-gray-600 hover:shadow-lg ">
+                Logo
+            </a>
+        </li>
+        <li>
+            <a href="#" id="about-me-tab" class="tab-link inline-flex items-center px-4 py-3 rounded-lg w-full bg-gray-500 hover:bg-gray-600 hover:shadow-lg">
+                Interest
+            </a>
+        </li>
+    </ul>
+    
+    <div class="p-6 bg-gray-500 text-medium text-gray-500 dark:text-gray-400 dark:bg-gray-800 rounded-lg w-full">
+        <div id="profile-content" class="tab-content flex items-start space-x-8">
+            <h3 class="text-lg font-bold text-white dark:text-white mb-2">Profile Tab</h3>
+            <img src="{% static 'images/profile.jpg' %}" alt="profile" class="pic">  
+    <dl class="max-w-md text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
+    <div class="flex flex-col pb-3">
+        <dt class="mb-1 text-white md:text-lg dark:text-gray-40">Name:</dt>
+        <dd class="text-lg font-semibold">Melchor G. Sibalon Jr.</dd>
+    </div>
+    <div class="flex flex-col py-3">
+        <dt class="mb-1 text-white md:text-lg dark:text-gray-400">Nickname:</dt>
+        <dd class="text-lg font-semibold">Mel</dd>
+    </div>
+    <div class="flex flex-col pt-3">
+        <dt class="mb-1 text-white md:text-lg dark:text-gray-400">Address:</dt>
+        <dd class="text-lg font-semibold">Las Piñas City</dd>
+    </div>
+    <div class="flex flex-col pt-3">
+        <dt class="mb-1 text-white md:text-lg dark:text-gray-400">Birth Date:</dt>
+        <dd class="text-lg font-semibold">September 22, 2003</dd>
+    </div>
+    </dl>
+    <dl class="max-w-md text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
+        <div class="flex flex-col pb-3">
+            <dt class="mb-1 text-white md:text-lg dark:text-gray-400">Email:</dt>
+            <dd class="text-lg font-semibold">melchorsibalonjr24@gmail.com</dd>
+        </div>
+        <div class="flex flex-col py-3">
+            <dt class="mb-1 text-white md:text-lg dark:text-gray-400">Campus:</dt>
+            <dd class="text-lg font-semibold">CVSU-Bacoor</dd>
+        </div>
+        <div class="flex flex-col pt-3">
+            <dt class="mb-1 text-white md:text-lg dark:text-gray-400">Course:</dt>
+            <dd class="text-lg font-semibold">BSIT</dd>
+        </div>
+        <div class="flex flex-col pt-3">
+            <dt class="mb-1 text-white md:text-lg dark:text-gray-400">Year in College:</dt>
+            <dd class="text-lg font-semibold">3rd Year</dd>
+        </div>
+        </dl>
+        <dl class="max-w-md text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
+            <div class="flex flex-col pb-3">
+                <dt class="mb-1 text-white md:text-lg dark:text-gray-400">Motto:</dt>
+                <dd class="text-lg font-semibold">"Mahirap labanan <br>ang katamaran <br>kaya kampihan nalang"</dd>
+            </div>
+            </dl>
+        </div>
+
+        <div id="logo-content" class="tab-content hidden flex items-start space-x-8">
+            <h3 class="text-lg font-bold text-white dark:text-white mb-2">Logo Tab</h3>
+            <img src="{% static 'images/logo.png'%}" alt="logo" class="pic">
+            <h4 class="text-2xl font-bold text-white dark:text-white">The logo is the combination of my initial surname(Sibalon) and my nickname(mel),<br>
+                I created it using canva.</h4>
+
+        </div>
+        
+        
+
+        <div id="about-me-content" class="tab-content hidden flex items-start space-x-8">
+            <h3 class="text-lg font-bold text-white dark:text-white mb-2">Interest Tab</h3>
+    <div class=" shadow-md sm:rounded-lg">
+        <table>
+            <thead class="text-white text-2xl uppercase bg-gray-600">
+                <tr>
+                    <th scope="col" class="px-6 py-3">
+                        Hobbies
+                    </th>   
+                </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <th scope="row" class="px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white">
+                    Read Manhwa/manga/manhua
+                </th>
+            </tr>
+            <tr>
+                <th scope="row" class="px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white">
+                    Watch Anime
+                </th>
+            </tr>
+            <tr>
+                <th scope="row" class="px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white">
+                    Cook
+                </th>
+            </tr>
+            <tr>
+                <th scope="row" class="px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white">
+                    Play Mobile Games
+                </th>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class=" shadow-md sm:rounded-lg">
+    <table>
+        <thead class="text-white text-2xl uppercase bg-gray-600">
+            <tr>
+                <th scope="col" class="px-6 py-3">
+                    Sports (used to play)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row" class="px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white">
+                    Basketball
+                </th>
+            </tr>
+            <tr>
+                <th scope="row" class="px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white">
+                    Tennis
+                </th>
+            </tr>
+            <tr>
+                <th scope="row" class="px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white">
+                    Badminton
+                </th>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class=" shadow-md sm:rounded-lg">
+    <table>
+        <thead class="text-white text-2xl uppercase bg-gray-600">
+            <tr>
+                <th scope="col" class="px-6 py-3">
+                    Favorites
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row" class="px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white">
+                    Food: Burger, Fried Foods
+                </th>
+            </tr>
+            <tr>
+                <th scope="row" class="px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white">
+                    Color: Black/anything dark
+                </th>
+            </tr>
+            <tr>
+                <th scope="row" class="px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white">
+                    Mobile Game: Genshin Impact
+                </th>
+            </tr>
+            <tr>
+                <th scope="row" class="px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white">
+                    Pet: Dog
+                </th>
+            </tr>
+        </tbody>
+    </table>
+</div>
+        </div>
+    </div>
+</div>
+<script src="{% static 'js/about.js'%}"></script>
+{% endblock content %}
