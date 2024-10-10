@@ -33,26 +33,21 @@ document.addEventListener('DOMContentLoaded', function () {
         showContent('about-me-tab', 'about-me-content');
     });
 });
-// Get all tab links
 const tabLinks = document.querySelectorAll('.tab-link');
 const tabContents = document.querySelectorAll('.tab-content');
 
-// Function to deactivate all tabs and hide content
 function deactivateTabs() {
   tabLinks.forEach(link => link.classList.remove('active'));
   tabContents.forEach(content => content.classList.add('hidden'));
 }
 
-// Loop through each tab link
 tabLinks.forEach(link => {
   link.addEventListener('click', function() {
-    // Deactivate all tabs
+ 
     deactivateTabs();
-    
-    // Activate the clicked tab
+
     this.classList.add('active');
     
-    // Show the related content
     const tabId = this.id.replace('-tab', '-content');
     document.getElementById(tabId).classList.remove('hidden');
   });
